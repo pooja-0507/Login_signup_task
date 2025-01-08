@@ -61,7 +61,7 @@ const LoginForm = () => {
               {isPasswordLogin ? (
                 <div className="relative">
                   <input
-                    type={showPassword ? "text" : "password"} // Toggle input type
+                    type={showPassword ? "text" : "password"} 
                     id="password"
                     placeholder="Password *"
                     className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
@@ -70,14 +70,14 @@ const LoginForm = () => {
                   {/* Eye Icon */}
                   <span
                     className="absolute right-3 top-3 text-gray-400 cursor-pointer"
-                    onClick={() => setShowPassword(!showPassword)} // Toggle password visibility
+                    onClick={() => setShowPassword(!showPassword)} 
                   >
                     {showPassword ? "🙈" : "👁️"}
                   </span>
                 </div>
               ) : (
                 <input
-                  type="text"
+                  type="number"
                   id="otp"
                   placeholder="Enter OTP *"
                   className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
