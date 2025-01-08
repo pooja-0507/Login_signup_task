@@ -97,7 +97,7 @@ const LoginForm = () => {
           {/* Login Button */}
           <button
             type="submit"
-            className="w-full mt-4 py-2 bg-yellow-500 text-black font-medium rounded-md hover:bg-yellow-600"
+            className="w-full mt-4 py-2 bg-yellow-500 text-black font-medium rounded-[0.3rem] hover:bg-yellow-600"
           >
             Login
           </button>

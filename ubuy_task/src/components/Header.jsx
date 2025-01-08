@@ -7,12 +7,12 @@ function Header() {
 
             {/* Tabs */}
             <div className="flex">
-                <button className="w-1/2 py-2 text-black font-medium bg-yellow-500 rounded-tl-lg">
+                <button className="w-1/2 py-3 text-black font-medium bg-yellow-500 rounded-l-[0.3rem]">
                     <Link to="/">
                         Login
                     </Link>
                 </button>
-                <button className="w-1/2 py-2 text-gray-600 bg-gray-200 font-medium rounded-tr-lg">
+                <button className="w-1/2 py-3 text-gray-600 bg-gray-200 font-medium rounded-r-[0.3rem]">
                     <Link to="/signup">
                         Sign Up
                     </Link>

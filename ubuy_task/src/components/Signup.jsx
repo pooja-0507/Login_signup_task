@@ -98,7 +98,7 @@ const SignupForm = () => {
           {/* Register Button */}
           <button
             type="submit"
-            className="w-full py-2 bg-yellow-500 text-black font-medium rounded-md hover:bg-yellow-600"
+            className="w-full py-2 bg-yellow-500 text-black font-medium rounded-[0.3rem] hover:bg-yellow-600"
           >
             Register
           </button>
