@@ -7,19 +7,20 @@ const SignupForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     alert("Form submitted Successfully!");
-  };    
+  };
 
   return (
-
     <div className="min-h-screen bg-gray-50 flex items-center justify-center">
       <div className="max-w-md w-full bg-white p-8 rounded-lg shadow-md">
-
-         {/* Header */}
-         <Header/>
+        {/* Header */}
+        <Header />
         <form className="mt-6 space-y-4" onSubmit={handleSubmit}>
           {/* Email Address */}
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium text-gray-700"
+            >
               Email Address
             </label>
             <input
@@ -38,7 +39,9 @@ const SignupForm = () => {
               <button
                 type="button"
                 className={`px-4 py-2 text-sm font-medium rounded-md ${
-                  !isPasswordLogin ? "bg-yellow-500 text-black" : "bg-gray-200 text-gray-800"
+                  !isPasswordLogin
+                    ? "bg-yellow-500 text-black"
+                    : "bg-gray-200 text-gray-800"
                 }`}
                 onClick={() => setIsPasswordLogin(false)}
               >
@@ -47,7 +50,9 @@ const SignupForm = () => {
               <button
                 type="button"
                 className={`px-4 py-2 text-sm font-medium rounded-md ${
-                  isPasswordLogin ? "bg-yellow-500 text-white" : "bg-gray-200 text-gray-800"
+                  isPasswordLogin
+                    ? "bg-yellow-500 text-white"
+                    : "bg-gray-200 text-gray-800"
                 }`}
                 onClick={() => setIsPasswordLogin(true)}
               >
@@ -57,14 +62,17 @@ const SignupForm = () => {
 
             <div className="flex items-center mt-2">
               <input
-                type={isPasswordLogin ? "password" : "text"}
+                type={isPasswordLogin ? "password" : "number"}
                 id={isPasswordLogin ? "password" : "otp"}
                 placeholder={isPasswordLogin ? "Password *" : "OTP *"}
                 className="flex-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
                 required
               />
               {!isPasswordLogin && (
-                <a href="#" className="ml-2 text-sm text-blue-500 hover:underline">
+                <a
+                  href="#"
+                  className="ml-2 text-sm text-blue-500 hover:underline"
+                >
                   Get OTP?
                 </a>
               )}
@@ -76,10 +84,14 @@ const SignupForm = () => {
             <input
               type="checkbox"
               id="mailingList"
-              className="w-7     h-6 text-yellow-500 border-gray-300 rounded focus:ring-yellow-500"
+              className="w-4 h-4 text-yellow-500 border-gray-300 rounded focus:ring-yellow-500"
             />
-            <label htmlFor="mailingList" className="ml-2 text-sm text-gray-600">
-              Join Our Mailing List - Get updates on Rollbacks, special pricing, hot new items, gift ideas, and more.
+            <label
+              htmlFor="mailingList"
+              className="ml-2 text-sm text-gray-600"
+            >
+              Join Our Mailing List - Get updates on Rollbacks, special pricing,
+              hot new items, gift ideas, and more.
             </label>
           </div>
 
