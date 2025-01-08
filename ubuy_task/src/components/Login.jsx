@@ -34,22 +34,14 @@ const LoginForm = () => {
             <div className="flex">
               <button
                 type="button"
-                className={`py-1 px-3 font-medium rounded-l-md ${
-                  isPasswordLogin
-                    ? "bg-yellow-500 text-black"
-                    : "bg-gray-200 text-gray-600"
-                }`}
+                className={`py-1 px-3 font-medium rounded-l-md ${isPasswordLogin? "bg-yellow-500 text-black": "bg-gray-200 text-gray-600"}`}
                 onClick={() => setIsPasswordLogin(true)}
               >
                 Password
               </button>
               <button
                 type="button"
-                className={`py-1 px-3 font-medium rounded-r-md ${
-                  !isPasswordLogin
-                    ? "bg-yellow-500 text-white"
-                    : "bg-gray-200 text-gray-600"
-                }`}
+                className={`py-1 px-3 font-medium rounded-r-md ${!isPasswordLogin? "bg-yellow-500 text-white": "bg-gray-200 text-gray-600}`}
                 onClick={() => setIsPasswordLogin(false)}
               >
                 OTP
